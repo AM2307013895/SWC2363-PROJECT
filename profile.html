@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard - Analog Avenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .user-details h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .user-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .edit-profile-btn {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dashboard-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .dashboard-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .dashboard-section h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .order-status {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .status-item {
+            text-align: center;
+        }
+
+        .status-item h4 {
+            margin: 0;
+            color: #666;
+        }
+
+        .status-item p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #337ab7;
+            margin: 5px 0;
+        }
+
+        .recent-orders table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .recent-orders th, .recent-orders td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .recent-orders th {
+            background-color: #f8f8f8;
+        }
+
+        .activity-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+        .activity-date {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <a href="index.html">
+                <img src="Logo/White Logo/LogoWhiteTP.png" alt="AALogo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="products.php">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div class="user-info">
+                <img src="Images/userAvatar.png" alt="User Avatar" class="user-avatar">
+                <div class="user-details">
+                    <h2>John Doe</h2>
+                    <p>john.doe@example.com</p>
+                    <p>+60 12-345 6789</p>
+                </div>
+            </div>
+            <button class="edit-profile-btn">Edit Profile</button>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="dashboard-section">
+                <h3>Order Overview</h3>
+                <div class="order-status">
+                    <div class="status-item">
+                        <h4>Pending</h4>
+                        <p>2</p>
+                    </div>
+                    <div class="status-item">
+                        <h4>Paid</h4>
+                        <p>3</p>
+                    </div>
+                    <div class="status-item">
+                        <h4>Delivered</h4>
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="recent-orders">
+                    <h4>Recent Orders</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345</td>
+                                <td>2023-05-15</td>
+                                <td>Delivered</td>
+                                <td>RM 150.00</td>
+                            </tr>
+                            <tr>
+                                <td>#12346</td>
+                                <td>2023-05-18</td>
+                                <td>Paid</td>
+                                <td>RM 89.99</td>
+                            </tr>
+                            <tr>
+                                <td>#12347</td>
+                                <td>2023-05-20</td>
+                                <td>Pending</td>
+                                <td>RM 210.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>Account Information</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> +60 12-345 6789</p>
+                <p><strong>Address:</strong> 123 Jalan Bukit Bintang, 55100 Kuala Lumpur, Malaysia</p>
+                <p><strong>Member Since:</strong> January 15, 2023</p>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>Recent Activity</h3>
+                <div class="activity-item">
+                    <p>Placed order #12347</p>
+                    <p class="activity-date">May 20, 2023</p>
+                </div>
+                <div class="activity-item">
+                    <p>Updated shipping address</p>
+                    <p class="activity-date">May 19, 2023</p>
+                </div>
+                <div class="activity-item">
+                    <p>Reviewed Kodak Colorplus 200</p>
+                    <p class="activity-date">May 17, 2023</p>
+                 </div>
+                <div class="activity-item">
+                    <p>Placed order #12346</p>
+                    <p class="activity-date">May 15, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Analog Avenue. All rights reserved.</p>
+    </footer>
+</body>
+</html>

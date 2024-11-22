@@ -1,0 +1,224 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user-details h2 {
+    margin: 0;
+    color: #333;
+}
+
+.user-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.edit-profile-btn {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.edit-profile-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.close-modal {
+    float: right;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.edit-form-group {
+    margin-bottom: 15px;
+}
+
+.edit-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-btn {
+    background-color: #56B3FA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #46A5E5;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .dashboard-section h3 {
+        margin-top: 0;
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+}
+
+    .order-status {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+}
+
+    .status-item {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+        max-width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .status-item .status-icon {
+        font-size: 3em;
+        margin-bottom: 10px;
+}
+
+    .status-item .status-info h4 {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 5px;
+}
+
+    .status-item .status-info p {
+        font-size: 1em;
+        color: #666;
+}
+
+    /* Different colors for different status */
+    .status-item.pending {
+        background-color: #FFF3CD;
+        color: #856404;
+}
+
+    .status-item.paid {
+        background-color: #D4EDDA;
+        color: #155724;
+}
+
+    .status-item.delivered {
+        background-color: #C3E6CB;
+        color: #155724;
+}
+
+    .recent-orders table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .recent-orders th, .recent-orders td {
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    .recent-orders th {
+        background-color: #f4f4f4;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .recent-orders td {
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    .recent-orders tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .recent-orders tr:hover {
+        background-color: #f1f1f1;
+    }

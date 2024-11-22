@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Analog Avenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesCart.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <a href="index.html">
+                <img src="Logo/White Logo/LogoWhiteTP.png" alt="AALogo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Your Shopping Cart</h1>
+            <span>3 items</span>
+        </div>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="Images/kodakColorplus200.jpg" alt="Kodak Colorplus 200">
+                <div class="item-details">
+                    <div class="item-name">Kodak Colorplus 200</div>
+                    <div class="item-price">RM 39.99</div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" class="quantity-input" value="2" min="1">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <span class="remove-item">Remove</span>
+            </div>
+
+            <div class="cart-item">
+                <img src="Images/kodakGold200.jpg" alt="Kodak Gold 200">
+                <div class="item-details">
+                    <div class="item-name">Kodak Gold 200</div>
+                    <div class="item-price">RM 59.99</div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <span class="remove-item">Remove</span>
+            </div>
+
+            <div class="cart-item">
+                <img src="Images/kentmerePan400.jpeg" alt="Kentmere Pan 400">
+                <div class="item-details">
+                    <div class="item-name">Kentmere Pan 400</div>
+                    <div class="item-price">RM 56.00</div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <span class="remove-item">Remove</span>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span>RM 195.97</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping</span>
+                <span>RM 10.00</span>
+            </div>
+            <div class="summary-item summary-total">
+                <span>Total</span>
+                <span>RM 205.97</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+        <div class="continue-shopping">
+            <a href="products.html">Continue Shopping</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>We are a Kuala Lumpur-based film lab specializing in film development, scanning, and offering a range of films for purchase. Whether you're capturing memories on disposable cameras or using professional film stocks, we're here to bring your moments to life.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4 <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Email: support@analogavenue.com</p>
+                <p>Phone: +60 12-345 6789</p>
+            </div>
+        </div>
+        <p>&copy; 2023 Analog Avenue. All rights reserved.</p>
+    </footer>
+</body>
+</html>
